@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://cionh15eqaxdh"]
+[gd_scene load_steps=10 format=4 uid="uid://cionh15eqaxdh"]
 
 [ext_resource type="Script" uid="uid://brmby7h68mui" path="res://scenes/levels/level.gd" id="1_26blj"]
 [ext_resource type="TileSet" uid="uid://cv5hbh50gwf0m" path="res://assets/LevelTiles.tres" id="1_b6flc"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c4s8hp5xn1ejg" path="res://scenes/components/level_transition.tscn" id="7_vwkcf"]
 [ext_resource type="Texture2D" uid="uid://ixufa54odgdh" path="res://assets/sprites/interactables/level-exit.png" id="8_ig7je"]
 [ext_resource type="PackedScene" uid="uid://bnhdxwco3l1g1" path="res://scenes/components/pickup.tscn" id="8_rv25a"]
+[ext_resource type="Texture2D" uid="uid://beufwvw1sx1yf" path="res://assets/cards/inventory/goblin_doll.png" id="9_h5mwg"]
 
 [node name="Level" type="Node2D" node_paths=PackedStringArray("entrance", "exit", "monster_container", "interactable_container")]
 script = ExtResource("1_26blj")
@@ -73,5 +74,10 @@ position = Vector2(104, 168)
 [node name="Chest2" parent="Interactables" instance=ExtResource("6_s7my2")]
 position = Vector2(120, 24)
 
-[node name="Pickup" parent="." instance=ExtResource("8_rv25a")]
+[node name="Pickups" type="Node2D" parent="."]
+
+[node name="Goblin Doll" parent="Pickups" instance=ExtResource("8_rv25a")]
 position = Vector2(88, 104)
+item_texture = ExtResource("9_h5mwg")
+item_name = "Goblin Doll"
+item_description = "A wierd little goblin likeness, some goblin kiddo must be missing this thing."

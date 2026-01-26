@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://jrijq5330mc3"]
 
 [ext_resource type="Texture2D" uid="uid://df4pma30vxaip" path="res://assets/sprites/monsters.png" id="1_3m5pa"]
-[ext_resource type="Script" uid="uid://bvq7rvfjft8vc" path="res://actors/monster.gd" id="2_3m5pa"]
+[ext_resource type="Script" uid="uid://bvq7rvfjft8vc" path="res://actors/monsters/monster.gd" id="2_3m5pa"]
 [ext_resource type="AudioStream" uid="uid://diqoykdckjljq" path="res://assets/audio/grunt.wav" id="3_e7hpd"]
 [ext_resource type="Script" uid="uid://b8bi0on1bnfxe" path="res://actors/vision_raycasting.gd" id="4_m5xkk"]
 

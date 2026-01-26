@@ -1,9 +1,12 @@
+@icon("res://actors/monster.svg")
 extends Sprite2D
 class_name Monster
 
+@export var data : MonsterData
+
 @export var move_distance : int = 16
 @export var moves_until_lost_interest : int = 3
-@export_range(0, 9, 1) var max_movement_repeat : int 
+@export_range(0, 9, 1) var max_movement_repeat : int
 
 @onready var is_on_screen: VisibleOnScreenNotifier2D = $VisibleOnScreenNotifier2D
 @onready var vision : MonsterVision  = $Vision

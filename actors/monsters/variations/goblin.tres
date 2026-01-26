@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MonsterData" load_steps=2 format=3 uid="uid://cf8urniufwfsv"]
+
+[ext_resource type="Script" uid="uid://dgm2x1u8yvc8q" path="res://actors/monsters/monster_data.gd" id="1_3ibav"]
+
+[resource]
+script = ExtResource("1_3ibav")
+monster_name = "Goblin"
+monster_description = "A smelly fellow apprised of scabs and warts and grime - probably best to leave him be."
+agression = 0.10000000000000009
+vision_distance = 4.0
+metadata/_custom_type_script = "uid://dgm2x1u8yvc8q"
